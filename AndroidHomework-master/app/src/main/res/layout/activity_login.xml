@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sample.login">
+
+    <ImageView
+        android:id="@+id/loginbackground"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@color/colorBlue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/loginbackup"
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:src="@color/editbackandtext"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/editbackup"
+        android:layout_width="260dp"
+        android:layout_height="100dp"
+        android:src="@drawable/editup"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/loginbackup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/editbackdown"
+        android:layout_width="260dp"
+        android:layout_height="60dp"
+        android:src="@drawable/editdown"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editbackup"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textColor="@color/colorBlue"
+        android:hint="Please Input Username"
+        android:textCursorDrawable="@color/colorBlue"
+        android:textColorHint="@color/colorGrey"
+        android:inputType="textPassword"
+        android:gravity="center"
+        android:background="@drawable/edit"
+        app:layout_constraintBottom_toTopOf="@+id/editbackdown"
+        app:layout_constraintEnd_toEndOf="@+id/editbackup"
+        app:layout_constraintStart_toStartOf="@+id/editbackup"
+        app:layout_constraintTop_toTopOf="@+id/editbackup"
+        app:layout_constraintVertical_bias="0.20999998" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textColor="@color/colorBlue"
+        android:hint="Please Input Password"
+        android:textCursorDrawable="@color/colorBlue"
+        android:textColorHint="@color/colorGrey"
+        android:gravity="center"
+        android:background="@drawable/edit"
+        app:layout_constraintBottom_toTopOf="@+id/editbackdown"
+        app:layout_constraintEnd_toEndOf="@+id/editbackup"
+        app:layout_constraintStart_toStartOf="@+id/editbackup"
+        app:layout_constraintTop_toTopOf="@+id/editbackup"
+        app:layout_constraintVertical_bias="0.8" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="160dp"
+        android:layout_height="30dp"
+        android:background="@drawable/button"
+        android:gravity="center"
+        android:text="login"
+        android:textColor="@color/editbackandtext"
+        app:layout_constraintBottom_toBottomOf="@+id/editbackdown"
+        app:layout_constraintEnd_toEndOf="@+id/editbackdown"
+        app:layout_constraintStart_toStartOf="@+id/editbackdown"
+        app:layout_constraintTop_toTopOf="@+id/editbackdown" />
+
+    <TextView
+        android:id="@+id/alarm"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20sp"
+        android:textColor="@color/editbackandtext"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editbackdown" />
+
+    <ImageView
+        android:id="@+id/slogan"
+        android:layout_width="400dp"
+        android:layout_height="300dp"
+        android:src="@drawable/slogan"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/logo"
+        app:layout_constraintBottom_toTopOf="@+id/editbackup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>
